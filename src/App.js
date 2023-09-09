@@ -1,34 +1,12 @@
 
 import './App.css';
-
-
+import {BrowserRouter,Routes,Route,Link}from 'react-router-dom'
+import Login from './components/Login'
+import Register from './components/Register'
 function App() {
   return (
   
-    <div className="App">
-      <div className='left-div'>
-          <h1>page</h1>
-      </div>
-      <div className='right-div'>
-
-        <div className='form'>
-          <form>
-            <h1>login</h1>
-            <div className='username'>
-              <input type="username" placeholder='username'></input>
-            </div>
-            <div className='password'>
-              <input type='password'placeholder='password'></input>
-            </div>
-            <div className='login'>
-              <button>Login</button>
-            </div>
-          </form>
-        </div>
-
-      </div>
-      
-    </div>
+    <Register/>
     
   );
 }
